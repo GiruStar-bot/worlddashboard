@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Vite configuration for the Worlddashboard project.  This file configures
-// the React plugin and specifies the development server port.  The plugin
-// handles the JSX transformation and other React-specific optimisations.
-
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // GitHub Pagesのリポジトリ名に合わせてベースパスを指定
+  base: '/worlddashboard/',
   server: {
     port: 5173,
   },
